@@ -1,0 +1,10 @@
+# Hospital Management System - Requirements
+# Python 3.7+
+
+# No external packages required!
+# The application uses only Python standard library modules:
+# - tkinter (usually comes with Python)
+# - sqlite3 (included in Python standard library)
+
+# Optional: For database viewing
+# DB Browser for SQLite (separate application download)
