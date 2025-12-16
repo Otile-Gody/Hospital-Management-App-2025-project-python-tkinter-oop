@@ -2,7 +2,6 @@
 Database connection and management module
 """
 import sqlite3
-import os
 
 
 class DatabaseManager:
@@ -26,6 +25,8 @@ class DatabaseManager:
     
     def execute_query(self, query, params=None):
         """Execute a query and return results"""
+        if not self.connection:
+            raise RuntimeError("Database connection not established. Call connect() first.")
         cursor = self.connection.cursor()
         if params:
             cursor.execute(query, params)
@@ -35,6 +36,8 @@ class DatabaseManager:
     
     def execute_update(self, query, params=None):
         """Execute an update/insert/delete query"""
+        if not self.connection:
+            raise RuntimeError("Database connection not established. Call connect() first.")
         cursor = self.connection.cursor()
         if params:
             cursor.execute(query, params)
