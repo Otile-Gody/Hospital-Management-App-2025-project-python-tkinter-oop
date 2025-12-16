@@ -2,7 +2,7 @@
 Main entry point for the Hospital Management System application
 """
 import tkinter as tk
-from tkinter import ttk, messagebox
+from tkinter import messagebox
 
 
 class HospitalManagementApp:
