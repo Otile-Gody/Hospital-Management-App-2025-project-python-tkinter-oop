@@ -26,4 +26,4 @@ def validate_phone(phone):
     # Remove common separators
     phone = re.sub(r'[\s\-\(\)]', '', phone)
     # Check if it's a valid phone number (10-15 digits)
-    return len(phone) >= 10 and len(phone) <= 15 and phone.isdigit()
+    return 10 <= len(phone) <= 15 and phone.isdigit()
