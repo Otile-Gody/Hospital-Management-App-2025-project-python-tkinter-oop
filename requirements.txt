@@ -1,0 +1,6 @@
+# No external dependencies required for basic functionality
+# Python standard library includes tkinter and sqlite3
+
+# Optional: For future enhancements
+# pillow>=10.0.0  # For image handling
+# reportlab>=4.0.0  # For PDF report generation
